@@ -8,7 +8,7 @@ namespace TrulyInspiredTaming;
 
 [HarmonyPatch(typeof(WorkGiver_InteractAnimal), nameof(WorkGiver_InteractAnimal.CanInteractWithAnimal), typeof(Pawn),
     typeof(Pawn), typeof(bool))]
-public class WorkGiver_InteractAnimal_CanInteractWithAnimal
+public static class WorkGiver_InteractAnimal_CanInteractWithAnimal
 {
     public static void Postfix(ref bool __result, Pawn pawn, Pawn animal)
     {
